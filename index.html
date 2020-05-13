@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"    />
+    <meta name="description" content="YSR - Yahoo Scrapper">
+    <title>Scrapper Yahoo</title>
+    <link rel='stylesheet' href="css/ysr_styles.css" type='text/css' media='all' />
+  </head>
+  <body>
+    <div class="ysr-wrapper">
+        <div class="ysr-row pt-50">
+            <center>
+                <div class="ysr-logo">
+                    <img alt="Yahoo" src="images/yahoo.png">
+                </div>
+                <div class="ysr-bar">
+                    <input class="ysr-searchbar" type="text" title="Search" autofocus placeholder="What do you want to scrape today?">
+                    <a href="#"> <img class="ysr-search-img" src="images/search.png" title="Search Icon"></a>
+                </div>
+                <div class="ysr-container">
+                    <div class="ysr-main">
+                        <label>Select Region</label>
+                        <select name="country">
+                            <option value="us">US</option>
+                            <option value="uk">UK</option>
+                            <option value="aus">Aus</option>
+                            <option value="india">India</option>
+                        </select>
+                    </div>
+                    <div class="ysr-buttons">
+                        <button class="button" type="button">
+                            <img src="images/globea.png" alt=""> Scrape Now </button>
+                        <button class="button" type="button"> <img src="images/refresha.png" alt=""> Re-Scrap</button>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <hr class="hr">
+        <div class="ysr-result-wrap ysr-scrape-result ">
+            <div class="ysr-result-head">
+                <h3><img class="ysr-search-img" src="images/search.png" title="Search Icon" style="margin-right: 8px"> Scrape Results</h3>
+                <div class="ysr-loading d-inline-block">
+                    <!-- toggle class .d-inline-block .d-none  -->
+                    <div class="ysr-line"></div>
+                    <div class="ysr-line"></div>
+                    <div class="ysr-line"></div>
+                    <div class="ysr-line"></div>
+                    <div class="ysr-line"></div>
+                </div>
+                <div class="ysr-exports">
+                    <span>Exports : </span>
+                    <a href="javascript: void(0)">Pdf</a>
+                    <a href="javascript: void(0)">Cvs</a>
+                </div>
+            </div>
+            <div class="ysr-table">
+                <div class="ysr-head ysr-row">
+                    <div class="ysr-head-name">
+                        Page Title
+                    </div>
+                    <div class="ysr-head-link">
+                        Link
+                    </div>
+                </div>
+                <div class="ysr-result ysr-row fadeInUp">
+                    <!-- toggle class .d-inline-block .d-none  -->
+                    <div class="ysr-result-name">
+                        <p>Yahoo ko title </p>
+                    </div>
+                    <div class="ysr-result-link">
+                        <a href="#Link">Page-ko-link</a>
+                    </div>
+                </div>
+                <div class="ysr-result ysr-row fadeInUp">
+                    <div class="ysr-result-name">
+                        <p>Yahoo ko title </p>
+                    </div>
+                    <div class="ysr-result-link">
+                        <a href="#Link">Page-ko-link</a>
+                    </div>
+                </div>
+                <div class="ysr-result ysr-row fadeInUp">
+                    <div class="ysr-result-name">
+                        <p>Yahoo ko title </p>
+                    </div>
+                    <div class="ysr-result-link">
+                        <a href="#Link">Page-ko-link</a>
+                    </div>
+                </div>
+                <div class="ysr-result ysr-row fadeInUp">
+                    <div class="ysr-result-name">
+                        <p>Yahoo ko title </p>
+                    </div>
+                    <div class="ysr-result-link">
+                        <a href="#Link">Page-ko-link</a>
+                    </div>
+                </div>
+                <div class="ysr-result ysr-row fadeInUp">
+                    <div class="ysr-result-name">
+                        <p>Yahoo ko title </p>
+                    </div>
+                    <div class="ysr-result-link">
+                        <a href="#Link">Page-ko-link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ysr-pagination">
+                <div class="ysr-pagination-container">
+                    <div class="ysr-pagination-hover-overlay"></div>
+                    <a href="javascript: void(0)" class="ysr-pagination-prev">
+                        <span class="icon-ysr-pagination icon-ysr-pagination-prev">
+                            <img src="images/left.png" alt="">
+                        </span>
+                    </a>
+                    <a href="javascript: void(0)" class="ysr-pagination-page-number">1</a>
+                    <a href="javascript: void(0)" class="ysr-pagination-page-number">2</a>
+                    <a href="javascript: void(0)" class="ysr-pagination-page-number ">3</a>
+                    <a href="javascript: void(0)" class="ysr-pagination-page-number active">4</a>
+                    <a href="javascript: void(0)" class="ysr-pagination-page-number">5</a>
+                    <a href="javascript: void(0)" class="ysr-pagination-page-number">6</a>
+                    <a href="javascript: void(0)" class="ysr-pagination-page-number">7</a>
+                    <a href="javascript: void(0)" class="ysr-pagination-next">
+                        <span class="icon-ysr-pagination icon-ysr-pagination-next">
+                            <img src="images/right.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/ysr_select.js"></script>
+    <script src="js/ysr_pagination.js"></script>
+  </body>
+</html>
